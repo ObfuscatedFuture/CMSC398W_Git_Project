@@ -12,3 +12,11 @@ def validate_operation(op):
     """Validate that operation is supported."""
     valid_ops = ['+', '-', '*', '/']
     return op in valid_ops
+
+def validate_integer(n):
+    """Validate that a number is an integer."""
+    try:
+        num = float(n)
+        return num == int(num)
+    except (ValueError, TypeError):
+        return False
