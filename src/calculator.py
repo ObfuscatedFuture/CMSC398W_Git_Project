@@ -33,7 +33,5 @@ def divide(a, b):
 
 def power(a, b):
     """Raise a to the power of b."""
-    print(f"[DEBUG] Power {a} ** {b}")
     result = a ** b
-    print(f"[DEBUG] Result: {result}")
     return result
