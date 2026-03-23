@@ -35,3 +35,5 @@ def power(a, b):
     """Raise a to the power of b."""
     result = a ** b
     return result
+
+# hello
