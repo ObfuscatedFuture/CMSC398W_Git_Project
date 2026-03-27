@@ -1,6 +1,6 @@
 """Tests for calculator operations."""
 import pytest
-from src.calculator import add, subtract, multiply, divide
+from src.calculator import add, subtract, multiply, divide, factorial
 from src.validator import validate_integer
 
 def test_add():
