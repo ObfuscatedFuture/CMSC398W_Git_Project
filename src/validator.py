@@ -20,3 +20,7 @@ def validate_integer(n):
         return num == int(num)
     except (ValueError, TypeError):
         return False
+    
+def is_positive(n):
+       """Check if a number is positive."""
+       return n > 0
