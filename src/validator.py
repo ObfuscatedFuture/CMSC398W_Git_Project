@@ -32,6 +32,8 @@ def validate_positive(n):
     try:
         num = float(n)
         return num > 0
+    except (ValueError, TypeError):
+        return False
       
 def validate_integer(n):
     """Validate that a number is an integer."""
