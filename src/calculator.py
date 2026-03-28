@@ -11,20 +11,41 @@ Each operation includes debug logging to track the execution flow.
 
 def add(a, b):
     """Add two numbers."""
-    return a + b
+    print(f"[DEBUG] Adding {a} + {b}")
+    result = a + b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def subtract(a, b):
     """Subtract b from a."""
-    return a - b
+    print(f"[DEBUG] Subtracting {a} - {b}")
+    result = a - b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def multiply(a, b):
     """Multiply two numbers."""
-    return a * b
+    print(f"[DEBUG] Multiplying {a} * {b}")
+    result = a * b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def divide(a, b):
     """Divide a by b."""
+    print(f"[DEBUG] Dividing {a} / {b}")
     if b == 0:
+        print(f"[DEBUG] Error: Division by zero!")
         raise ValueError("Cannot divide by zero")
+    result = a / b
+    print(f"[DEBUG] Result: {result}")
+    return result
+
+def power(a, b):
+    """Raise a to the power of b."""
+    result = a ** b
+    return result
+
+# hello
     return a / b
  
 

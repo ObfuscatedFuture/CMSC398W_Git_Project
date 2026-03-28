@@ -1,3 +1,8 @@
+"""There are three functions that validate different values. validate_number() returns 
+true if the given value can be converted into a float. validate_operation returns true 
+if the given value is an operation contained in the valid_ops list. validate_positive() 
+returns true if the given value is greater than 0."""
+
 """Input validation for calculator."""
 
 def validate_number(value):
@@ -13,6 +18,12 @@ def validate_operation(op):
     valid_ops = ['+', '-', '*', '/']
     return op in valid_ops
 
+def validate_positive(n):
+    """Validate that a number is positive."""
+    try:
+        num = float(n)
+        return num > 0
+      
 def validate_integer(n):
     """Validate that a number is an integer."""
     try:
