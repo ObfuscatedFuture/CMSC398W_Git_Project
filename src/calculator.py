@@ -1,3 +1,5 @@
+"""Basic calculator operations."""
+import math
 """
 This module provides arithmetic operations for a calculator.
 
@@ -9,6 +11,7 @@ It includes functions for:
 Each operation includes debug logging to track the execution flow.
 """
 
+"""Hi I was here"""
 def add(a, b):
     """Add two numbers."""
     print(f"[DEBUG] Adding {a} + {b}")
@@ -32,24 +35,23 @@ def multiply(a, b):
 
 def divide(a, b):
     """Divide a by b."""
-    print(f"[DEBUG] Dividing {a} / {b}")
-    if b == 0:
-        print(f"[DEBUG] Error: Division by zero!")
+    if b != 0:
+        result = a / b
+    else:
         raise ValueError("Cannot divide by zero")
-    result = a / b
-    print(f"[DEBUG] Result: {result}")
+    
     return result
+
+def square_root(a):
+    """Calculate square root of a."""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return math.sqrt(a)
 
 def power(a, b):
     """Raise a to the power of b."""
     result = a ** b
     return result
-
-# hello
-    return a / b
- 
-
- #Random comment for commit experiment
 
 def factorial(n):
     """Calculate factorial of n."""
