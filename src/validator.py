@@ -23,6 +23,15 @@ def validate_positive(n):
     try:
         num = float(n)
         return num > 0
+      
+def validate_integer(n):
+    """Validate that a number is an integer."""
+    try:
+        num = float(n)
+        return num == int(num)
+    except (ValueError, TypeError):
+        return False
+    
 def validate_range(value, min_val=-1000, max_val=1000):
     """Validate that number is within acceptable range."""
     try:
